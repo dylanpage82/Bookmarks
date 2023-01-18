@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
 
   if (token) {
     token = token.replace('Bearer ', '')
-
+    console.log('Checking Token')
     jwt.verify(token, process.env.SECRET, function (err, decoded) {
       req.user = err ? null : decoded.user
       req.exp = err ? null : new Date(decoded.exp * 1000)
