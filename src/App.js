@@ -4,9 +4,7 @@ import CreateBookmark from './components/CreateBookmark/CreateBookmark'
 import BookmarkList from './components/BookmarkList/BookmarkList'
 
 export default function App () {
-  /*
-    Login, SignUp, CreateBookmark, ListBookmarksByUser, DeleteBookmark, UpdateBookmark
-    */
+  
 
   const handleChangeAuth = (event) => {
     setCredentials({ ...credentials, [event.target.name]: event.target.value })
